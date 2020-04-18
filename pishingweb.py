@@ -43,5 +43,5 @@ x_pred = input('Input a website/s (seperated by spaces): ').strip().split()
 x_pred1 = vector.transform(x_pred)
 news = regression.predict(x_pred1) #ito na yung mga label kung bad/good. 
 
-print(news)#print kung bad or good in order
+print(news)#print kung bad or good  in order
  
