@@ -1,4 +1,3 @@
-#Without GUI platform or GUI toolkit
 import pandas as pd
 import numpy as np
 import random
@@ -26,8 +25,8 @@ def makeTokens(f):
     return total_Tokens
 
 #kukunin dito yung mga website pati yung label nila.
-y = urlData["label"] #kukunin niya yung label na good/bad sa urldata.csv
-urlList = urlData["url"] #kukuinin niya lahat ng mga website either good or bad
+y = urlData["URL"] #kukunin niya yung label na good/bad sa urldata.csv
+urlList = urlData["STATUS"] #kukuinin niya lahat ng mga website either good or bad
 
 #dito na papasok yung machine learning gagamit ng regression para malaman kung good or bad
 vector = TfidfVectorizer(tokenizer=makeTokens)
@@ -39,10 +38,9 @@ print("Accuracy ", regression.score(xTest, yTest))#print yung accuracy ng makuku
 
 
     #x_pred = ["online.bpi.com.ph/portalserver/onlinebanking/sign-in","google.com","facebook.com/login","sanagustinturismo.co/Facebook/", "facebook.pcriot.com/login.php"]
-x_pred = input('Input a website/s (seperated by spaces): ').strip().split()
-    
+x_pred = input('Input a website/s (seperated by spaces): ').strip().split()    
 x_pred1 = vector.transform(x_pred)
 news = regression.predict(x_pred1) #ito na yung mga label kung bad/good. 
 
-print(news)#print kung bad or good  in order
+print(news)#print kung bad or good in order
  
