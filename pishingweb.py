@@ -7,10 +7,6 @@ from sklearn.model_selection import train_test_split
 
 class Pishingweb:
 
-    def __init__(self):
-        self.urlData = pd.read_csv("urldata.csv")
-
-
 #hihimayin lang nento yung mga strings 
     def makeTokens(self, f):
         tkns_BySlash = str(f.encode('utf-8')).split('/')
@@ -29,25 +25,3 @@ class Pishingweb:
     def vectoran(self):
         vector = TfidfVectorizer(tokenizer=self.makeTokens)
         return vector
-
-    def accuracy(self):
-        y = self.urlData["label"] #Get Status[Good/Bad] in urldata.csv
-        urlList = self.urlData["url"] #Get websites[Good/Bad]
-        #dito na papasok yung machine learning gagamit ng regression para malaman kung good or bad
-        
-        x = self.vectoran().transform(urlList)
-        xLR, xTest, yLR, yTest = train_test_split(x, y, test_size=0.2, random_state=42)
-        regression = LogisticRegression()
-        regression.fit(xLR, yLR)
-        regScore = regression.score(xTest, yTest)
-        print("Accuracy ", regScore)#print yung accuracy ng makukuha niya 
-        return regression
-
-'''   
-    def prediction(self, vector):
-        x_pred = Ui_MainWindow.scanning().strip().split()    
-        x_pred1 = vector.transform(x_pred)
-        news = accuracy().predict(x_pred1) #ito na yung mga label kung bad/good.
-        print(news)#print kung bad or good in order
-        return news 
-'''
