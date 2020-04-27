@@ -1,10 +1,10 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QLabel, QWidget
 from pishingweb import Pishingweb
-from sklearn.feature_extraction.text import TfidfVectorizer
-import numpy as np
 
-class Ui_MainWindow(Pishingweb):
+
+class Ui_MainWindow():
+        
 
    #Events
     def homeCheck(self):
@@ -12,13 +12,10 @@ class Ui_MainWindow(Pishingweb):
         print("Home")
 
     def scanning(self):
-        meow = self.lineEdit.text()
-        x_pred = meow.strip().split() 
-        print(x_pred)
-        x_pred1 = self.vectoran().fit_transform(x_pred)
-        news = self.accuracy().predict(x_pred1) #ito na yung mga label kung bad/good.
-        #print kung bad or good in order
-        return meow
+        urlInput = self.lineEdit.text()
+        tmp = Pishingweb()
+        tmp.accuracy(urlInput)
+        
 
     def blacklistCheck(self):
         print("Blacklist")
@@ -178,3 +175,6 @@ if __name__ == "__main__":
     MainWindow.show()
     MainWindow.setFixedSize(890,610)
     sys.exit(app.exec_())
+
+#created P.I.R.A.N.H.A.
+'''deb:nathan'''

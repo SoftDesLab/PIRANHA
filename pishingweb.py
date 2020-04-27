@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import sqlite3
 import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
@@ -8,10 +9,12 @@ from sklearn.model_selection import train_test_split
 class Pishingweb:
 
     def __init__(self):
-        self.urlData = pd.read_csv("urldata.csv")
+        super().__init__()
+        cnx = sqlite3.connect('urlData.db')
+        self.urlData = pd.read_sql_query("SELECT * FROM Url", cnx)
 
 
-#hihimayin lang nento yung mga strings 
+    #hihimayin lang nento yung mga strings 
     def makeTokens(self, f):
         tkns_BySlash = str(f.encode('utf-8')).split('/')
         total_Tokens = []
@@ -26,28 +29,32 @@ class Pishingweb:
         if "com" in total_Tokens:
             total_Tokens.remove('com')
         return total_Tokens
-    def vectoran(self):
-        vector = TfidfVectorizer(tokenizer=self.makeTokens)
-        return vector
 
-    def accuracy(self):
-        y = self.urlData["label"] #Get Status[Good/Bad] in urldata.csv
-        urlList = self.urlData["url"] #Get websites[Good/Bad]
-        #dito na papasok yung machine learning gagamit ng regression para malaman kung good or bad
-        
-        x = self.vectoran().transform(urlList)
+    def accuracy(self, urlInput):
+        y = self.urlData["Condition"] #kukunin niya yung label na good/bad sa urldata.csv
+        urlList = self.urlData["URLs"] #kukuinin niya lahat ng mga website either good or bad
+
+#dito na papasok yung machine learning gagamit ng regression para malaman kung good or bad
+        vector = TfidfVectorizer(tokenizer=self.makeTokens)
+        x = vector.fit_transform(urlList)
         xLR, xTest, yLR, yTest = train_test_split(x, y, test_size=0.2, random_state=42)
         regression = LogisticRegression()
         regression.fit(xLR, yLR)
-        regScore = regression.score(xTest, yTest)
-        print("Accuracy ", regScore)#print yung accuracy ng makukuha niya 
-        return regression
+        print("Accuracy ", regression.score(xTest, yTest))#print yung accuracy ng makukuha niya 
 
-'''   
-    def prediction(self, vector):
-        x_pred = Ui_MainWindow.scanning().strip().split()    
-        x_pred1 = vector.transform(x_pred)
-        news = accuracy().predict(x_pred1) #ito na yung mga label kung bad/good.
-        print(news)#print kung bad or good in order
-        return news 
-'''
+
+        #x_pred = ["online.bpi.com.ph/portalserver/onlinebanking/sign-in","google.com","facebook.com/login","sanagustinturismo.co/Facebook/", "facebook.pcriot.com/login.php"]
+        url = urlInput.strip().split()
+    
+        urlTok = vector.transform(url)
+        condition = regression.predict(urlTok) #ito na yung mga label kung bad/good. 
+        if condition == [1]:
+            print('\n',urlInput, " is safe to use.\n")
+            return condition
+        else:
+            print('\n',urlInput, " is not safe to use.\n")
+            return condition
+        
+
+        #created P.I.R.A.N.H.A.
+        """cre:nathan"""
