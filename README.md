@@ -26,12 +26,16 @@ The students created a program that detects phishing websites using machine lear
 * Any IDE (Integrated Development Enviroment Software), in this case, the developers used Visual Studio (VS) Code. <br />
 To download, head over to https://code.visualstudio.com/ and choose the software appropriate for your platform (Windows, Mac, or Linux).
 * Python <br />
-If you don't have Python already installed, run the following commands to install Python3 and pip, the package manager for Python, into your Linux installation.
+If you don't have Python already installed, run the following commands to install Python3 and pip3, the package manager for Python, into your Linux installation.
 ```
 sudo apt update
-sudo apt install python3 python3-pip
+sudo apt install python3 python3-pip3
 ```
 And to verify, run:
 ```
 python3 --version
 ```
+Packages:
+* sklearn <br />
+* numpy <br />
+* pandas <br />
