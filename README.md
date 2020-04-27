@@ -27,14 +27,11 @@ The students created a program that detects phishing websites using machine lear
 To download, head over to https://code.visualstudio.com/ and choose the software appropriate for your platform (Windows, Mac, or Linux).
 * Python
 If you don't have Python already installed, run the following commands to install Python3 and pip, the package manager for Python, into your Linux installation.
-'''
+```
 sudo apt update
 sudo apt install python3 python3-pip
-'''
+```
 And to verify, run:
-'''
+```
 python3 --version
-'''
-
-
-
+```
