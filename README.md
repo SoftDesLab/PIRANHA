@@ -52,13 +52,28 @@ And to verify, run:
 ```
 python3 --version
 ```
+##### Python Packages:
+* [Pandas] <br />
+  - Pandas is a high-level data manipulation tool developed by Wes McKinney. It is built on the Numpy package and its key data structure     is called the DataFrame. DataFrames allow you to store and manipulate tabular data in rows of observations and columns of variables.
+    - To install pandas using pip, type "pip install pandas" in the terminal.
+* [Numpy] <br />
+  - Numpy is the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and         tools for working with these arrays.
+    - To install numpy using pip, type "pip install numpy" in the terminal.
+* [random] <br />
+  - It is a built-in module that you can use to make random numbers. Some of its features are securing random generator using a secrets module which generates secure tokens, security keys, and URL, set the state of a random generator, generate random strings and passwords, and etc.
+* [sklearn] <br />
+  - Scikit-learn is a free built-in machine learning library for Python. It features various algorithms like support vector machine, random forests, and k-neighbours, and it also supports Python numerical and scientific libraries like NumPy and SciPy.
+ 
+##### Graphical User Interface (GUI) Packages:
+* [PyQt5]
+  - [QtCore]
+  - [QtGui]
+  - [QtWidgets]
+  - [QtSql]
 
-=======
-Packages:
-* sklearn <br />
-* numpy <br />
-* pandas <br />
-
+##### Database Packages:
+* [DBManager]
+* [SQLite 3]
 
 ## Target Audience
 For this repository our target audience are Data Analysts, students and teachers of Computer Engineering, Computer Science, and Information Technology. As our content in this repository, the Detection of Phishing Websites and the list of Black listed websites. 
