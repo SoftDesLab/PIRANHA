@@ -57,31 +57,31 @@ And to verify, run:
 python3 --version
 ```
 ##### Python Packages:
-* Pandas <br />
+* **Pandas** <br />
   Pandas is a high-level data manipulation tool developed by Wes McKinney. It is built on the Numpy package and its key data structure     is called the DataFrame. DataFrames allow you to store and manipulate tabular data in rows of observations and columns of variables.
     - To install pandas using pip, type in the terminal:
     ```
     pip install pandas 
     ```
-* Numpy <br />
+* **Numpy** <br />
   Numpy is the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and         tools for working with these arrays.
     - To install numpy using pip, type in the terminal: 
     ```
     pip install numpy
     ```
-* random <br />
+* **Random** <br />
   Random is a built-in module that you can use to make random numbers. Some of its features are securing random generator using a secrets module which generates secure tokens, security keys, and URL, set the state of a random generator, generate random strings and passwords, and etc.
-* sklearn <br />
+* **SKLearn** <br />
   Scikit-learn is a free built-in machine learning library for Python. It features various algorithms like support vector machine, random forests, and k-neighbours, and it also supports Python numerical and scientific libraries like NumPy and SciPy.
  
 ##### Graphical User Interface (GUI) Packages:
-* [PyQt5] <br />
+* **PyQt5** <br />
   PyQt5 is one of the most used modules in building GUI apps in Python and that's due to its simplicity as you will see. Another great feature that encourages developers to use PyQt5 is the PyQt5 designer which makes it so easy to develop complex GUI apps in a short time.
 
 ##### Database Packages:
-* [DBManager] <br />
+* **DBManager** <br />
   DBManager is the most powerful application for data management. With builtin support for MySQL, PostgreSQL, Interbase/Firebird, SQLite, DBF tables, MSAccess, MSSQL Server, Sybase, Oracle and ODBC database engines, it also brings you new features which make it the most advanced application.
-* [SQLite 3] <br />
+* **SQLite 3** <br />
   SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.
 
 ## Target Audience
@@ -100,12 +100,12 @@ The language that our program uses is SQL (Structured Query Language) is a datab
 ## References
 ## Build Status
 ## Authors
-* Leaders: <br />
-  * Garcia, Joshua Ron G. (https://github.com/peculiarNoobie)
-  * Julkipli, Omar Mukhtar Y. (https://github.com/OmarJulkipli)
-* Members: <br />
-  * Abarquez, Arnett Johneill M. (https://github.com/Arnett0822)
-  * Alde, Regina Bianca A. (https://github.com/alderegina)
-  * Apelo, Mary Lee D. (https://github.com/mary18lee)
-  * Gonzales, Joshua C. (https://github.com/Joshinobi)
-  * Ronquillo, Dominic Narciso T. (https://github.com/DominicRonquillo)
+* **Leaders:** <br />
+  * *Garcia, Joshua Ron G.* (https://github.com/peculiarNoobie)
+  * *Julkipli, Omar Mukhtar Y.* (https://github.com/OmarJulkipli)
+* **Members:** <br />
+  * *Abarquez, Arnett Johneill M.* (https://github.com/Arnett0822)
+  * *Alde, Regina Bianca A.* (https://github.com/alderegina)
+  * *Apelo, Mary Lee D.* (https://github.com/mary18lee)
+  * *Gonzales, Joshua C.* (https://github.com/Joshinobi)
+  * *Ronquillo, Dominic Narciso T.* (https://github.com/DominicRonquillo)
