@@ -37,7 +37,7 @@ Keywords: Phishing, Phishing Websites, Detection, Machine Learning.
 This repository contains a program that has three features, listed as follows:
   1. Detects phishing websites, most especially, those of e-commerce websites,
   2. Displays a list of blacklisted phishing websites, and
-  3. Brief description about the program and the people behind it.
+  3. Illustrates a brief description about the program and the developers behind it.
 
 ## Overview
 The students created a program that detects phishing websites using machine learning algorithm that checks whether the website is phishing or a safe website. The students used their knowledge that they obtained in the subject CPE106L and created a project that detects phishing websites with the use of machine learning algorithm, phishing websites are then stored in a file so that the program can comprehend and compare the differences between a phishing website and a non-phishing website. 
