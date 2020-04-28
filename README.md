@@ -58,9 +58,13 @@ Packages:
 * pandas <br />
 
 ## Target Audience
+For this repository our target audience are Data Analysts, students and teachers of Computer Engineering, Computer Science, and Information Technology. As our content in this repository, the Detection of Phishing Websites and the list of Black listed websites. 
 ## Focus Areas
+This repository aims to give understanding on how Detecting Phishing Websites works.
 ### Scenarios
+We aim to have scenarios that helps the user to be aware of Phishing Websites.
 ### Languages
+The language that our program uses is the English language. 
 ## Project Content
 ## References
 ## Build Status
