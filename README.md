@@ -7,7 +7,7 @@
 ██╔═══╝░░░░██║░░░██╔══██╗░░░██╔══██║░░░██╔══██║░░░██║╚████║░░░██╔══██║
 ██║░░░░░██╗██║██╗██║░░██║██╗██║░░██║██╗██║░░██║██╗██║░╚███║██╗██║░░██║
 ╚═╝░░░░░╚═╝╚═╝╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚═╝╚═╝░░╚═╝
-![GitHub Logo](https://github.com/SoftDesLab/P.I.R.A.N.H.A./blob/AldeRBA/Logo%20v2.0.png)
+![GitHub Logo](https://github.com/SoftDesLab/P.I.R.A.N.H.A./blob/AldeRBA/Logo%20v2.0.png) <br />
 A program that detects phishing websites with machine learning by Python.
 
 ## Table of Contents
