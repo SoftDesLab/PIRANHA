@@ -14,16 +14,19 @@ A program that detects phishing websites with machine learning by Python.
 
 - [Getting Started](#getting-started) <br />
   - [Project Features](#project-features) <br />
-- [Overview] (#overview) <br />
-  - [Prerequisites] (#prerequisites) <br />
-- [Target Audience] (#target-audience) <br />
-- [Focus Areas] (#focus-areas) <br />
-  - [Scenarios] (#scenarios) <br />
-  - [Languages] (#languages) <br />
-- [Project Content] (#project-content) <br />
-- [References] (#references) <br />
-- [Build Status] (#build-status) <br />
-- [Authors] (#authors) <br />
+- [Project Overview](#project-overview) <br />
+  - [Requirements](#requirements) <br />
+    - [Python Packages](#python-packages) <br />
+    - [Graphical User Interface Packages](#graphical-user-interface-packages) <br />
+    - [Database Packages](#database-packages) <br />
+ - [Target Audience](#target-audience) <br />
+ - [Focus Areas](#focus-areas) <br />
+    - [Scenarios](#scenarios) <br />
+    - [Languages](#languages) <br />
+ - [Project Content](#project-content) <br />
+ - [References](#references) <br />
+ - [Build Status](#build-status) <br />
+ - [Authors](#authors) <br />
   
 ## Getting Started
 The program focuses on Detecting Phishing Websites using Machine Learning to accurately detect the Phishing Websites. Phishing Websites targets the human vulnerabilities rather than the software vulnerabilities. It is the process of attracting online users in order to acquire the user’s sensitive information such as password and usernames. The program was developed using the Python programming language, the students programmed a machine learning algorithm in order to detect the phishing websites. The users of this program can use it to become aware on these phishing websites and protect their sensitive information by detecting phishing websites. 
@@ -39,7 +42,7 @@ This repository contains a program that has three features, listed as follows:
 ## Overview
 The students created a program that detects phishing websites using machine learning algorithm that checks whether the website is phishing or a safe website. The students used their knowledge that they obtained in the subject CPE106L and created a project that detects phishing websites with the use of machine learning algorithm, phishing websites are then stored in a file so that the program can comprehend and compare the differences between a phishing website and a non-phishing website. 
 
-### Prerequisites
+### Requirements
 * Any IDE (Integrated Development Enviroment Software), in this case, the developers used Visual Studio (VS) Code. <br />
 To download, head over to https://code.visualstudio.com/ and choose the software appropriate for your platform (Windows, Mac, or Linux).
 * Python <br />
@@ -83,12 +86,16 @@ python3 --version
 
 ## Target Audience
 For this repository our target audience are Data Analysts, students and teachers of Computer Engineering, Computer Science, and Information Technology. As our content in this repository, the Detection of Phishing Websites and the list of Black listed websites. 
+
 ## Focus Areas
 This repository aims to give understanding on how Detecting Phishing Websites works.
+
 ### Scenarios
 We aim to have scenarios that helps the users to be aware of Phishing Websites. This program helps user to distinguish whether the Website is a Phishinhg Website or a real website.
+
 ### Languages
 The language that our program uses is SQL (Structured Query Language) is a database management language for relational databases. The programming language that the program uses is the Python programming language which is an interpreted, object-oriented, high-level programming language with dynamic semantics.
+
 ## Project Content
 ## References
 ## Build Status
