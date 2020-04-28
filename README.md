@@ -21,7 +21,7 @@ A program that detects phishing websites with machine learning by Python
 - [Project Content] (#project-content) <br />
 - [References] (#references) <br />
 - [Build Status] (#build-status) <br />
-- [Acknowledgement] (#acknowledgement) <br />
+- [Authors] (#authors) <br />
   
 ## Getting Started
 The program focuses on Detecting Phishing Websites using Machine Learning to accurately detect the Phishing Websites. Phishing Websites targets the human vulnerabilities rather than the software vulnerabilities. It is the process of attracting online users in order to acquire the user’s sensitive information such as password and usernames. The program was developed using the Python programming language, the students programmed a machine learning algorithm in order to detect the phishing websites. The users of this program can use it to become aware on these phishing websites and protect their sensitive information by detecting phishing websites. 
@@ -53,3 +53,14 @@ Packages:
 * sklearn <br />
 * numpy <br />
 * pandas <br />
+
+## Authors
+* Leaders: <br />
+  * [Garcia, Joshua Ron G.] (https://github.com/peculiarNoobie)
+  * [Julkipli, Omar Mukhtar Y.] (https://github.com/OmarJulkipli)
+* Members: <br />
+  * [Abarquez, Arnett Johneill M.] (https://github.com/Arnett0822)
+  * [Alde, Regina Bianca A.] (https://github.com/alderegina)
+  * [Apelo, Mary Lee D.] (https://github.com/mary18lee)
+  * [Gonzales, Joshua C.] (https://github.com/Joshinobi)
+  * [Ronquillo, Dominic Narciso T.] (https://github.com/DominicRonquillo)
