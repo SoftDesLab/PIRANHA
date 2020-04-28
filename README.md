@@ -54,6 +54,13 @@ Packages:
 * numpy <br />
 * pandas <br />
 
+## Target Audience
+## Focus Areas
+### Scenarios
+### Languages
+## Project Content
+## References
+## Build Status
 ## Authors
 * Leaders: <br />
   * Garcia, Joshua Ron G. (https://github.com/peculiarNoobie)
