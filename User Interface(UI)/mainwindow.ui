@@ -395,7 +395,7 @@ QPushButton:pressed
      </attribute>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QTabWidget" name="tabWidget_2">
+       <widget class="QTabWidget" name="abouUsTab">
         <property name="layoutDirection">
          <enum>Qt::RightToLeft</enum>
         </property>
@@ -430,7 +430,7 @@ QTabBar::tab
 }</string>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="tab">
          <attribute name="title">
@@ -455,7 +455,7 @@ QTabBar::tab
            <bool>true</bool>
           </property>
          </widget>
-         <widget class="QLabel" name="label_5">
+         <widget class="QLabel" name="teamAbout">
           <property name="geometry">
            <rect>
             <x>20</x>
@@ -495,17 +495,17 @@ QTabBar::tab
            <bool>true</bool>
           </property>
          </widget>
-         <widget class="QLabel" name="label_4">
+         <widget class="QLabel" name="piranhaAbout">
           <property name="geometry">
            <rect>
-            <x>-90</x>
+            <x>0</x>
             <y>0</y>
-            <width>861</width>
-            <height>401</height>
+            <width>671</width>
+            <height>381</height>
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">image: url(:/piranhaAbout/piranha.jpg);</string>
+           <string notr="true">image: url(:/piranhaAbout/piranhaAbout.jpg);</string>
           </property>
           <property name="text">
            <string/>
@@ -523,8 +523,8 @@ QTabBar::tab
  <resources>
   <include location="background.qrc"/>
   <include location="team.qrc"/>
-  <include location="piranha.qrc"/>
   <include location="piranhaLogo.qrc"/>
+  <include location="piranhaAbout.qrc"/>
  </resources>
  <connections/>
 </ui>

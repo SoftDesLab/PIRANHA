@@ -209,9 +209,9 @@ class Ui_MainWindow(object):
         self.AboutUSTab.setObjectName("AboutUSTab")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.AboutUSTab)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.tabWidget_2 = QtWidgets.QTabWidget(self.AboutUSTab)
-        self.tabWidget_2.setLayoutDirection(QtCore.Qt.RightToLeft)
-        self.tabWidget_2.setStyleSheet("QTabWidget::pane { /* The tab widget frame */\n"
+        self.abouUsTab = QtWidgets.QTabWidget(self.AboutUSTab)
+        self.abouUsTab.setLayoutDirection(QtCore.Qt.RightToLeft)
+        self.abouUsTab.setStyleSheet("QTabWidget::pane { /* The tab widget frame */\n"
 "    border-top: 0px solid #63C5DA;\n"
 "}\n"
 "\n"
@@ -239,7 +239,7 @@ class Ui_MainWindow(object):
 "{\n"
 "      color: #777777;\n"
 "}")
-        self.tabWidget_2.setObjectName("tabWidget_2")
+        self.abouUsTab.setObjectName("abouUsTab")
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
         self.label_3 = QtWidgets.QLabel(self.tab)
@@ -248,12 +248,12 @@ class Ui_MainWindow(object):
         self.label_3.setPixmap(QtGui.QPixmap("../piranhaUi/team.jpg"))
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
-        self.label_5 = QtWidgets.QLabel(self.tab)
-        self.label_5.setGeometry(QtCore.QRect(20, -10, 641, 401))
-        self.label_5.setStyleSheet("image: url(:/team/team.jpg);")
-        self.label_5.setText("")
-        self.label_5.setObjectName("label_5")
-        self.tabWidget_2.addTab(self.tab, "")
+        self.teamAbout = QtWidgets.QLabel(self.tab)
+        self.teamAbout.setGeometry(QtCore.QRect(20, -10, 641, 401))
+        self.teamAbout.setStyleSheet("image: url(:/team/team.jpg);")
+        self.teamAbout.setText("")
+        self.teamAbout.setObjectName("teamAbout")
+        self.abouUsTab.addTab(self.tab, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
         self.label_2 = QtWidgets.QLabel(self.tab_2)
@@ -262,13 +262,13 @@ class Ui_MainWindow(object):
         self.label_2.setPixmap(QtGui.QPixmap("../piranhaUi/about.jpg"))
         self.label_2.setScaledContents(True)
         self.label_2.setObjectName("label_2")
-        self.label_4 = QtWidgets.QLabel(self.tab_2)
-        self.label_4.setGeometry(QtCore.QRect(-90, 0, 861, 401))
-        self.label_4.setStyleSheet("image: url(:/piranhaAbout/piranha.jpg);")
-        self.label_4.setText("")
-        self.label_4.setObjectName("label_4")
-        self.tabWidget_2.addTab(self.tab_2, "")
-        self.verticalLayout.addWidget(self.tabWidget_2)
+        self.piranhaAbout = QtWidgets.QLabel(self.tab_2)
+        self.piranhaAbout.setGeometry(QtCore.QRect(0, 0, 671, 381))
+        self.piranhaAbout.setStyleSheet("image: url(:/piranhaAbout/piranhaAbout.jpg);")
+        self.piranhaAbout.setText("")
+        self.piranhaAbout.setObjectName("piranhaAbout")
+        self.abouUsTab.addTab(self.tab_2, "")
+        self.verticalLayout.addWidget(self.abouUsTab)
         self.tabWidget.addTab(self.AboutUSTab, "")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -277,7 +277,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(2)
-        self.tabWidget_2.setCurrentIndex(0)
+        self.abouUsTab.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -293,13 +293,14 @@ class Ui_MainWindow(object):
         self.blacklistLabel.setText(_translate("MainWindow", "BLACKLIST"))
         self.refresh.setText(_translate("MainWindow", "Refresh"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.BlackListTab), _translate("MainWindow", "BLACKLIST"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab), _translate("MainWindow", "The Team"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_2), _translate("MainWindow", "PIRANHA"))
+        self.abouUsTab.setTabText(self.abouUsTab.indexOf(self.tab), _translate("MainWindow", "The Team"))
+        self.abouUsTab.setTabText(self.abouUsTab.indexOf(self.tab_2), _translate("MainWindow", "PIRANHA"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.AboutUSTab), _translate("MainWindow", "ABOUT US"))
 import background
+import piranhaAbout
 import piranhaLogo
-import piranha
 import team
+
 
 if __name__ == "__main__":
     import sys
