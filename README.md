@@ -62,9 +62,9 @@ For this repository our target audience are Data Analysts, students and teachers
 ## Focus Areas
 This repository aims to give understanding on how Detecting Phishing Websites works.
 ### Scenarios
-We aim to have scenarios that helps the user to be aware of Phishing Websites.
+We aim to have scenarios that helps the users to be aware of Phishing Websites. This program helps user to distinguish whether the Website is a Phishinhg Website or a real website.
 ### Languages
-The language that our program uses is the English language. 
+The language that our program uses is SQL (Structured Query Language) is a database management language for relational databases. The programming language that the program uses is the Python programming language which is an interpreted, object-oriented, high-level programming language with dynamic semantics.
 ## Project Content
 ## References
 ## Build Status
