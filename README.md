@@ -13,7 +13,7 @@ A program that detects phishing websites with machine learning by Python
 - [Getting Started](#getting-started) <br />
   - [Project Features](#project-features) <br />
 - [Overview](#overview) <br />
-  - [Pre-requisites] (#pre-requisites) <br />
+  - [Prerequisites] (#prerequisites) <br />
 - [Target Audience] (#target-audience) <br />
 - [Focus Areas] (#focus-areas) <br />
   - [Scenarios] (#scenarios) <br />
