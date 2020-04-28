@@ -1,3 +1,4 @@
+#Libraries used for data_extraction.py
 import pandas as pd
 import numpy as np
 import sqlite3
@@ -5,10 +6,10 @@ import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
-import dbmanager
+from dbmanager import dbmanager
 
-class Pishingweb(object):
-
+class data_extraction(object):
+    
     def __init__(self):
         super().__init__()
         self.urlData = pd.read_sql_query("SELECT * FROM Url", dbmanager.database(self))
