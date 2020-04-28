@@ -79,7 +79,6 @@ python3 --version
 
 ### How to Use
 ## Target Audience
-For this repository, our target audience are data analysts, students and teachers of Computer Engineering, Computer Science, and Information Technology, consumers, and many more. As our content in this repository, the Detection of Phishing Websites and the list of blacklisted websites. 
 
 ## Focus Areas
 This repository aims to give understanding on how Detecting Phishing Websites works.
