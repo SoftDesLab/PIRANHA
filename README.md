@@ -56,11 +56,11 @@ Packages:
 
 ## Authors
 * Leaders: <br />
-  * [Garcia, Joshua Ron G.] (https://github.com/peculiarNoobie)
-  * [Julkipli, Omar Mukhtar Y.] (https://github.com/OmarJulkipli)
+  * Garcia, Joshua Ron G. (https://github.com/peculiarNoobie)
+  * Julkipli, Omar Mukhtar Y. (https://github.com/OmarJulkipli)
 * Members: <br />
-  * [Abarquez, Arnett Johneill M.] (https://github.com/Arnett0822)
-  * [Alde, Regina Bianca A.] (https://github.com/alderegina)
-  * [Apelo, Mary Lee D.] (https://github.com/mary18lee)
-  * [Gonzales, Joshua C.] (https://github.com/Joshinobi)
-  * [Ronquillo, Dominic Narciso T.] (https://github.com/DominicRonquillo)
+  * Abarquez, Arnett Johneill M. (https://github.com/Arnett0822)
+  * Alde, Regina Bianca A. (https://github.com/alderegina)
+  * Apelo, Mary Lee D. (https://github.com/mary18lee)
+  * Gonzales, Joshua C. (https://github.com/Joshinobi)
+  * Ronquillo, Dominic Narciso T. (https://github.com/DominicRonquillo)
