@@ -1,4 +1,5 @@
-# P-Phishing <br /> I-Identifier <br /> and  R-Remote <br /> A-Access <br /> N-Network <br/> or H- Hacking  A-APIs 
+# P-hishing I-dentifier and  R-emote A-ccess N-etwork or H-acking  A-PIs <br />
+
 
 ██████╗░░░░██╗░░░██████╗░░░░░█████╗░░░░██╗░░██╗░░░███╗░░██╗░░░░█████╗░
 ██╔══██╗░░░██║░░░██╔══██╗░░░██╔══██╗░░░██║░░██║░░░████╗░██║░░░██╔══██╗
@@ -7,7 +8,8 @@
 ██║░░░░░██╗██║██╗██║░░██║██╗██║░░██║██╗██║░░██║██╗██║░╚███║██╗██║░░██║
 ╚═╝░░░░░╚═╝╚═╝╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚═╝╚═╝░░╚═╝
 
-A program that detects phishing websites with machine learning by Python
+A program that detects phishing websites with machine learning by Python.
+
 ## Table of Contents
 
 - [Getting Started](#getting-started) <br />
