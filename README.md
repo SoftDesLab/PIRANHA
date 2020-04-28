@@ -36,7 +36,7 @@ This repository contains a program that has three features, listed as follows:
 ## Overview
 The students created a program that detects phishing websites using machine learning algorithm that checks whether the website is phishing or a safe website. The students used their knowledge that they obtained in the subject CPE106L and created a project that detects phishing websites with the use of machine learning algorithm, phishing websites are then stored in a file so that the program can comprehend and compare the differences between a phishing website and a non-phishing website. 
 
-### Pre-requisites
+### Prerequisites
 * Any IDE (Integrated Development Enviroment Software), in this case, the developers used Visual Studio (VS) Code. <br />
 To download, head over to https://code.visualstudio.com/ and choose the software appropriate for your platform (Windows, Mac, or Linux).
 * Python <br />
