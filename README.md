@@ -19,6 +19,7 @@ A program that detects phishing websites with machine learning by Python.
     - [Python Packages](#python-packages) <br />
     - [Graphical User Interface Packages](#graphical-user-interface-packages) <br />
     - [Database Packages](#database-packages) <br />
+  - [How to Use](#how-to-use) <br />
  - [Target Audience](#target-audience) <br />
  - [Focus Areas](#focus-areas) <br />
     - [Scenarios](#scenarios) <br />
@@ -84,6 +85,7 @@ python3 --version
 * **SQLite 3** <br />
   SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.
 
+### How to Use
 ## Target Audience
 For this repository, our target audience are data analysts, students and teachers of Computer Engineering, Computer Science, and Information Technology, consumers, and many more. As our content in this repository, the Detection of Phishing Websites and the list of blacklisted websites. 
 
