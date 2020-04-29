@@ -1,10 +1,15 @@
 #Libraries used for mainwindow.py
 from PyQt5 import QtCore, QtGui, QtWidgets, QtSql
 import background, piranhaLogo, piranhaAbout, team
+import sys
+sys.path.append('P.I.R.A.N.H.A/Logic')
 from data_extraction import data_extraction
 from dbmanager import dbmanager
 
 class Ui_MainWindow(object):
+
+    def __init__(self):
+        pass
 
     #The function identifies if the entered website is a phishing website or not.
     def scanCheck(self):
@@ -22,7 +27,11 @@ class Ui_MainWindow(object):
             else:
                 self.label.setText(_translate("Mainwindow", "STATUS: THE SUSPICIOUS WEBSITE IS NOT A PHISHING BAIT."))
         else:
+
             self.label.setText(_translate("Mainwindow", "STATUS: ENTER SOMETHING YOU DOUCHE."))
+
+            self.label.setText(_translate("Mainwindow", "STATUS: The Website is not a Phishing URL."))
+            print("STATUS: The Website is not a Phishing URL.")  
 
     #The function displays the list of phishing websites in the database.
     def Refresh(self):
