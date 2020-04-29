@@ -96,7 +96,6 @@ The language that our program uses is SQL (Structured Query Language) is a datab
   https://github.com/microsoft/nlp-recipes?fbclid=IwAR2IXLYfrqjs-LH4yznJNxlj2-afctwwkEH5fSKJgQC7bQOkC3j065KGDcI
   https://blog.syscloud.com/types-of-phishing/ 
   https://www.phishing.org/what-is-phishing 
-  https://github.com/Jcharis/Machine-Learning-In-Julia-       JCharisTech/blob/master/Detecting%20Malicious%20Url%20In%20Julia%20With%20Machine%20Learning.ipynb
   https://ieeexplore.ieee.org/document/8769571
   https://doi.org/10.1155/2018/4678746 
   https://www.researchgate.net/publication/328541785 
