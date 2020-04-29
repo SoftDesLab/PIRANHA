@@ -91,6 +91,21 @@ The language that our program uses is SQL (Structured Query Language) is a datab
 
 ## Project Content
 ## References
+  https://medium.com/better-programming/add-badges-to-a-github-repository-716d2988dc6a
+  https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
+  https://github.com/microsoft/nlp-recipes?fbclid=IwAR2IXLYfrqjs-LH4yznJNxlj2-afctwwkEH5fSKJgQC7bQOkC3j065KGDcI
+  https://blog.syscloud.com/types-of-phishing/ 
+  https://www.phishing.org/what-is-phishing 
+  https://github.com/Jcharis/Machine-Learning-In-Julia-       JCharisTech/blob/master/Detecting%20Malicious%20Url%20In%20Julia%20With%20Machine%20Learning.ipynb
+  https://ieeexplore.ieee.org/document/8769571
+  https://doi.org/10.1155/2018/4678746 
+  https://www.researchgate.net/publication/328541785 
+  https://towardsdatascience.com/phishing-domain-detection-with-ml-5be9c99293e5 
+  https://www.ijrte.org/wp-content/uploads/papers/v8i2S11/B10180982S1119.pdf 
+  https://doi.org/10.1109/cais.2019.8769571 
+
+
+
 ## Build Status
 ## Authors
 * **Leaders:** <br />
