@@ -6,19 +6,19 @@ A program that detects phishing websites with machine learning by Python.
 
 - [Getting Started](#getting-started) <br />
   - [Project Features](#project-features) <br />
-- [Project Overview](#project-overview) <br />
+- [Overview](#overview) <br />
   - [Requirements](#requirements) <br />
     - [Python Packages](#python-packages) <br />
     - [Graphical User Interface Packages](#graphical-user-interface-packages) <br />
     - [Database Packages](#database-packages) <br />
-  - [How to Use](#how-to-use) <br />
+ - [How to Use](#how-to-use) <br />
  - [Target Audience](#target-audience) <br />
  - [Focus Areas](#focus-areas) <br />
     - [Scenarios](#scenarios) <br />
     - [Languages](#languages) <br />
- - [Project Content](#project-content) <br />
- - [References](#references) <br />
- - [Build Status](#build-status) <br />
+ - [User Stories](#user-stories) <br />
+ - [System Architecture](#system-architecture) <br />
+ - [Sample Screenshots](#sample-screenshots) <br />
  - [Authors](#authors) <br />
   
 ## Getting Started
@@ -67,7 +67,7 @@ python3 --version
 * **SKLearn** <br />
   Scikit-learn is a free built-in machine learning library for Python. It features various algorithms like support vector machine, random forests, and k-neighbours, and it also supports Python numerical and scientific libraries like NumPy and SciPy.
  
-##### Graphical User Interface (GUI) Packages:
+##### Graphical User Interface Packages:
 * **PyQt5** <br />
   PyQt5 is one of the most used modules in building GUI apps in Python and that's due to its simplicity as you will see. Another great feature that encourages developers to use PyQt5 is the PyQt5 designer which makes it so easy to develop complex GUI apps in a short time.
 
@@ -77,10 +77,12 @@ python3 --version
 * **SQLite 3** <br />
   SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.
 
-### How to Use
+## How to Use
 <img src="https://github.com/SoftDesLab/P.I.R.A.N.H.A./blob/JulkipliOMY/How.gif">
+
 ## Target Audience
 For this repository our target audience are Data Analysts, students and teachers of Computer Engineering, Computer Science, and Information Technology. As our content in this repository, the Detection of Phishing Websites and the list of Black listed websites.
+
 ## Focus Areas
 This repository aims to give understanding on how Detecting Phishing Websites works.
 
@@ -90,9 +92,15 @@ We aim to have scenarios that helps the users to be aware of Phishing Websites. 
 ### Languages
 The language that our program uses is SQL (Structured Query Language) is a database management language for relational databases. The programming language that the program uses is the Python programming language which is an interpreted, object-oriented, high-level programming language with dynamic semantics.
 
-## Project Content
-## References
-## Build Status
+## User Stories
+### General User
+* **Feature 1** <br />
+  - As a general user, I want to...
+* **Feature 2** <br />
+  - As a general user, I want  to...
+  
+## System Architecture
+## Sample Screenshots
 ## Authors
 * **Leaders:** <br />
   * *Garcia, Joshua Ron G.* (https://github.com/peculiarNoobie)
