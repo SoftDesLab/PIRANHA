@@ -83,11 +83,14 @@ python3 --version
 The user manual present the step-b-step procedure on how to use the P.I.R.A.N.H.A program focusing on website detection using Scikit-learn machine learning library.
 
 **Instructions:**
-  1. Install all the required packages using the following command – pip install [library]. Make sure the pip is consistent with the          Python version by typing pip -v.
+  1. Install all the required packages as seen under the Requirements section using the following command – pip install [library]. Make sure the pip is consistent with the          Python version by typing pip -v.
   2. Clone the P.I.R.A.N.H.A repository to sync to your local machine.
-  3. After cloning the repository unzip the file folder to use.
+     ```
+     git clone https://github.com/SoftDesLab/P.I.R.A.N.H.A..git
+     ```
+  3. After cloning the repository, unzip the file folder to use.
   4. Add the folder to your IDE (Visual Studio Code, NetBeans, Sublime Text...) 
-  5.	Go to the mainwindow.py to debug and run the program.
+  5.	Go to the main.py to debug and run the program.
   6.	A GUI platform will be displayed; the program has three pages that represents each functionality:
   
  * **Home** <br />
