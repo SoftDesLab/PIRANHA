@@ -78,6 +78,7 @@ python3 --version
   SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.
 
 ### How to Use
+<img src="https://github.com/SoftDesLab/P.I.R.A.N.H.A./blob/JulkipliOMY/How.gif">
 ## Target Audience
 For this repository our target audience are Data Analysts, students and teachers of Computer Engineering, Computer Science, and Information Technology. As our content in this repository, the Detection of Phishing Websites and the list of Black listed websites.
 ## Focus Areas
