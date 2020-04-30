@@ -11,7 +11,7 @@ A program that detects phishing websites with machine learning by Python.
     - [Python Packages](#python-packages) <br />
     - [Graphical User Interface Packages](#graphical-user-interface-packages) <br />
     - [Database Packages](#database-packages) <br />
- - [How to Use](#how-to-use) <br />
+ - [User Manual](#user-manual) <br />
  - [Target Audience](#target-audience) <br />
  - [Focus Areas](#focus-areas) <br />
     - [Scenarios](#scenarios) <br />
@@ -77,9 +77,36 @@ python3 --version
 * **SQLite 3** <br />
   SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.
 
-## How to Use
+## User Manual
 <img src="https://github.com/SoftDesLab/P.I.R.A.N.H.A./blob/JulkipliOMY/How.gif">
 
+The user manual present the step-b-step procedure on how to use the P.I.R.A.N.H.A program focusing on website detection using Scikit-learn machine learning library.
+
+**Instructions:**
+  1. Install all the required packages using the following command – pip install [library]. Make sure the pip is consistent with the          Python version by typing pip -v.
+  2. Clone the P.I.R.A.N.H.A repository to sync to your local machine.
+  3. After cloning the repository unzip the file folder to use.
+  4. Add the folder to your IDE (Visual Studio Code, NetBeans, Sublime Text...) 
+  5.	Go to the mainwindow.py to debug and run the program.
+  6.	A GUI platform will be displayed; the program has three pages that represents each functionality:
+  
+ * **Home** <br />
+   The home page serves as the starting point of the program. It presents the main capability of the program which is to scan the
+   suspicious website entered by the suer. Once, the website has been scanned by the feature_extraction.py. The Tfidvectorizer's
+   purpose is to convert a collection of data to a matrix of TF-IFF or features in the prediction function then after that the
+   program convers the url into streams of tokens which are then separated by word and punctuation then return the prediction to
+   test the dataset and predict the probability of the URL in a categorical dependent varible which is in binary through Logistic 
+   Regression if it is safe or not. Then, the status of the suspicious website will be displayed.
+    
+ * **Blacklist** <br />
+   The blacklist page serves as to where the proven phishing websites are added to the dataset. the list of captured phishing websites
+   are presented in a table once the user refresh since it is in a real-time basis. In addition, a bar graph is presented to showcase
+   the number of websites in a dataset to interpret where the machine learning program is basing on.
+  
+* **About Us** <br/>
+   The About us page is where the insights of the developers involved in the Team page while an overview of the program in the Project 
+   Page.
+   
 ## Target Audience
 For this repository our target audience are Data Analysts, students and teachers of Computer Engineering, Computer Science, and Information Technology. As our content in this repository, the Detection of Phishing Websites and the list of Black listed websites.
 
