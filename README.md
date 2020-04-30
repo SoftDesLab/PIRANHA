@@ -82,6 +82,7 @@ python3 --version
 
 ## Target Audience
 For this repository our target audience are Data Analysts, students and teachers of Computer Engineering, Computer Science, and Information Technology. As our content in this repository, the Detection of Phishing Websites and the list of Black listed websites.
+
 ## Focus Areas
 This repository aims to give understanding on how Detecting Phishing Websites works.
 
@@ -91,9 +92,14 @@ We aim to have scenarios that helps the users to be aware of Phishing Websites. 
 ### Languages
 The language that our program uses is SQL (Structured Query Language) is a database management language for relational databases. The programming language that the program uses is the Python programming language which is an interpreted, object-oriented, high-level programming language with dynamic semantics.
 
-## Project Content
-## References
-## Build Status
+## User Stories (General User)
+* **Feature 1** <br />
+  - As a general user, I want to...
+* **Feature 2** <br />
+  - As a general user, I want  to...
+  
+## System Architecture
+## Sample Screenshots
 ## Authors
 * **Leaders:** <br />
   * *Garcia, Joshua Ron G.* (https://github.com/peculiarNoobie)
