@@ -1,11 +1,15 @@
 #Libraries used for mainwindow.py
-from PyQt5 import QtCore, QtGui, QtWidgets, QtSql 
+from PyQt5 import QtCore, QtGui, QtWidgets, QtSql
 import background, piranhaLogo, piranhaAbout, team
+import sys
+sys.path.append('P.I.R.A.N.H.A/Logic')
 from data_extraction import data_extraction
 from dbmanager import dbmanager
 
-
 class Ui_MainWindow(object):
+
+    def __init__(self):
+        pass
 
     #The function identifies if the entered website is a phishing website or not.
     def scanCheck(self):
@@ -15,34 +19,43 @@ class Ui_MainWindow(object):
             self.completed += 0.0001
             self.progressBar.setValue(self.completed)
         urlInput = self.lineEdit.text()
-        tmp = data_extraction()
-        status = tmp.prediction(urlInput)
-        if status != [1]: #If statement identifies if the prediction is either from [1] - SAFE or [0] - NOT. 
-            self.label.setText(_translate("MainWindow", "STATUS: The Website is a Phishing URL."))
-            print("STATUS: The Website is a Phishing URL.")
+        if urlInput != "":
+            use = data_extraction()
+            status = use.prediction(urlInput)
+            if status != [1]: #If statement identifies if the prediction is either from [1] - SAFE or [0] - NOT. 
+                self.label.setText(_translate("MainWindow", "STATUS: THE SUSPICIOUS WEBSITE IS A PHISHING BAIT."))
+            else:
+                self.label.setText(_translate("Mainwindow", "STATUS: THE SUSPICIOUS WEBSITE IS NOT A PHISHING BAIT."))
         else:
+
+            self.label.setText(_translate("Mainwindow", "STATUS: ENTER SOMETHING YOU DOUCHE."))
+
             self.label.setText(_translate("Mainwindow", "STATUS: The Website is not a Phishing URL."))
-            print("STATUS: The Website is a Phishing URL.")  
+            print("STATUS: The Website is not a Phishing URL.")  
 
     #The function displays the list of phishing websites in the database.
     def Refresh(self):
         query = "SELECT URLs FROM URL WHERE URL.Condition='0'"
-        tmp = dbmanager() 
-        results = tmp.database().execute(query)
+        use = dbmanager() 
+        results = use.database().execute(query)
         self.tableWidget.setRowCount(0)
         for row_num, row_data in enumerate(results): #For statement creates a table for the database.
             self.tableWidget.insertRow(row_num)
             for col_num, data in enumerate(row_data):    
                 self.tableWidget.setItem(row_num, col_num, QtWidgets.QTableWidgetItem(str(data)))
         
-        tmp.database().close()
+        use.database().close()
 
     #The function inserts new suspicious websites to the database hence, it would increase the approximation of the program.
     def insertBL(self, insert): #Having difficulties in calling the function inputdb from db manager
         insert = self.inputBL.text()
-        tmp = dbmanager()
-        tmp.inputdb(insert) #Inserts the suspicious website to the database.
-        print("Suspicious website has been inserted.")
+        use = dbmanager()
+        use.inputdb(insert) #Inserts the suspicious website to the database.
+
+    #The function shows the Phishing Website analysis bargraph comparing the quantity between what is safe and not.
+    def graphicBL(self):
+        use = dbmanager()
+        use.graphdb()
 
     #The function creates the interface.
     def setupUi(self, MainWindow):
@@ -106,7 +119,7 @@ class Ui_MainWindow(object):
         self.lineEdit = QtWidgets.QLineEdit(self.HomeTab) #Sets the searchbar for the scanning of suspicious website.
         self.lineEdit.setGeometry(QtCore.QRect(40, 210, 501, 31))
         self.lineEdit.setObjectName("lineEdit")
-        self.lineEdit.setPlaceholderText("Please enter a Website")
+        self.lineEdit.setPlaceholderText("PLEASE ENTER A SUSPICIOUS WEBSITE")
         self.scan = QtWidgets.QPushButton(self.HomeTab) #Sets the button that scans the Website.
         self.scan.setGeometry(QtCore.QRect(540, 210, 112, 31))
         self.scan.setAutoFillBackground(False)
@@ -144,14 +157,27 @@ class Ui_MainWindow(object):
         self.progressBar.setObjectName("progressBar")
         self.label = QtWidgets.QLabel(self.HomeTab) #Sets the output if the website is a phishing website.
         self.label.setGeometry(QtCore.QRect(40, 310, 611, 20))
-        self.label.setStyleSheet("font: 75 italic 10pt \"Arial\";\n"
+        self.label.setStyleSheet("font: 63 10pt \"Yu Gothic UI Semibold\";\n"
 "")
         self.label.setObjectName("label")
+        self.quote = QtWidgets.QLabel(self.HomeTab) #Sets an awesome quote for the program.
+        self.quote.setGeometry(QtCore.QRect(38, 90, 621, 121))
+        self.quote.setStyleSheet("*{\n"
+"   font-family:century gothic;\n"
+"   font-size:22px;\n"
+"   font-weight:600;\n"
+"}\n"
+"\n"
+"QLabel\n"
+"{\n"
+"   color: #777777;\n"
+"}")
+        self.quote.setObjectName("quote")
         self.tabWidget.addTab(self.HomeTab, "")
         self.BlackListTab = QtWidgets.QWidget()
         self.BlackListTab.setObjectName("BlackListTab")
         self.refresh = QtWidgets.QPushButton(self.BlackListTab) #Sets the refresh button to show the list of phishing website.
-        self.refresh.setGeometry(QtCore.QRect(30, 80, 71, 31))
+        self.refresh.setGeometry(QtCore.QRect(30, 90, 71, 21))
         self.refresh.setAutoFillBackground(False)
         self.refresh.clicked.connect(self.Refresh)
         self.refresh.setStyleSheet("QPushButton\n"
@@ -191,8 +217,28 @@ class Ui_MainWindow(object):
         self.inputBL = QtWidgets.QLineEdit(self.BlackListTab) #Sets the searchbar for the Phishing website to the database.
         self.inputBL.setGeometry(QtCore.QRect(30, 30, 511, 31))
         self.inputBL.setObjectName("inputBL")
+        self.inputBL.setPlaceholderText("PLEASE ENTER A WEBSITE TO ADD TO BLACKLIST")
+        self.Graph = QtWidgets.QPushButton(self.BlackListTab)
+        self.Graph.setGeometry(QtCore.QRect(100, 90, 71, 21))
+        self.Graph.setAutoFillBackground(False)
+        self.Graph.setStyleSheet("QPushButton\n"
+"{\n"
+"    color:white;\n"
+"    background:#0492C2;\n"
+"    border-radius:0px;\n"
+"}\n"
+"QPushButton:hover\n"
+"{\n"
+"    background-color:#52B2BF;\n"
+"}\n"
+"QPushButton:pressed\n"
+"{\n"
+"    background-color:#63C5DA;\n"
+"}")
+        self.Graph.setObjectName("Graph")
+        self.Graph.clicked.connect(self.graphicBL)
         self.tableWidget = QtWidgets.QTableWidget(self.BlackListTab) #Sets the table to show the list of Phishing websites.
-        self.tableWidget.setGeometry(QtCore.QRect(30, 110, 331, 291))
+        self.tableWidget.setGeometry(QtCore.QRect(30, 110, 621, 291))
         self.tableWidget.setRowCount(100)
         self.tableWidget.setColumnCount(1)
         self.tableWidget.setStyleSheet("font: 75 7pt \"Tahoma\";")
@@ -201,11 +247,8 @@ class Ui_MainWindow(object):
         header.setSectionResizeMode(0, QtWidgets.QHeaderView.Stretch)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(0, item)
-        self.graphicsView = QtWidgets.QGraphicsView(self.BlackListTab)
-        self.graphicsView.setGeometry(QtCore.QRect(370, 110, 281, 291))
-        self.graphicsView.setObjectName("graphicsView")
         self.tabWidget.addTab(self.BlackListTab, "")
-        self.AboutUSTab = QtWidgets.QWidget()
+        self.AboutUSTab = QtWidgets.QWidget() #Sets another section tabs in aboutUs tab
         self.AboutUSTab.setObjectName("AboutUSTab")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.AboutUSTab)
         self.verticalLayout.setObjectName("verticalLayout")
@@ -242,7 +285,7 @@ class Ui_MainWindow(object):
         self.AboutTab.setObjectName("abouUsTab")
         self.teamTab = QtWidgets.QWidget()
         self.teamTab.setObjectName("teamTab")
-        self.teamAbout = QtWidgets.QLabel(self.teamTab)
+        self.teamAbout = QtWidgets.QLabel(self.teamTab) #Sets the credits to the members who build the project.
         self.teamAbout.setGeometry(QtCore.QRect(20, -10, 641, 401))
         self.teamAbout.setStyleSheet("image: url(:/team/team.jpg);")
         self.teamAbout.setText("")
@@ -250,7 +293,7 @@ class Ui_MainWindow(object):
         self.AboutTab.addTab(self.teamTab, "")
         self.abstractTab = QtWidgets.QWidget()
         self.abstractTab.setObjectName("abstractTab")
-        self.piranhaAbout = QtWidgets.QLabel(self.abstractTab)
+        self.piranhaAbout = QtWidgets.QLabel(self.abstractTab) #Sets the introduction on what the project is all about.
         self.piranhaAbout.setGeometry(QtCore.QRect(0, 0, 671, 381))
         self.piranhaAbout.setStyleSheet("image: url(:/piranhaAbout/piranhaAbout.jpg);")
         self.piranhaAbout.setText("")
@@ -270,16 +313,18 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "P.I.R.A.H.N.A"))
-        # MainWindow.setWindowIcon(QIcon('assets/piranhaLogo.png'))
+        MainWindow.setWindowIcon(QtGui.QIcon('assets/iconMain.png'))
         self.scan.setText(_translate("MainWindow", "SCAN"))
+        self.quote.setText(_translate("MainWindow", "<html><head/><body><p>RELENTLESS AND FIERCE AGAINST PHISHING.</p></body></html>"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.HomeTab), _translate("MainWindow", "HOME"))
-        self.refresh.setText(_translate("MainWindow", "Refresh"))
+        self.refresh.setText(_translate("MainWindow", "REFRESH"))
         item = self.tableWidget.horizontalHeaderItem(0)
-        item.setText(_translate("MainWindow", "List of Phishing Websites"))
+        item.setText(_translate("MainWindow", "LIST OF CAPTURED PHISHING WEBSITES"))
         self.enterBL.setText(_translate("Mainwindow", "ENTER"))
+        self.Graph.setText(_translate("MainWindow", "GRAPH"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.BlackListTab), _translate("MainWindow", "BLACKLIST"))
-        self.AboutTab.setTabText(self.AboutTab.indexOf(self.teamTab), _translate("MainWindow", "The Team"))
-        self.AboutTab.setTabText(self.AboutTab.indexOf(self.abstractTab), _translate("MainWindow", "PIRANHA"))
+        self.AboutTab.setTabText(self.AboutTab.indexOf(self.teamTab), _translate("MainWindow", "TEAM"))
+        self.AboutTab.setTabText(self.AboutTab.indexOf(self.abstractTab), _translate("MainWindow", "PROJECT"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.AboutUSTab), _translate("MainWindow", "ABOUT US"))
 
 #The function that executes all of the code found in the file.

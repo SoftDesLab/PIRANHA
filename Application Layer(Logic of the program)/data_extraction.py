@@ -10,10 +10,13 @@ from dbmanager import dbmanager
 
 class data_extraction(object):
     
+    #The function allows the class to initialize the attributes of the class.
     def __init__(self):
         super().__init__()
         self.urlData = pd.read_sql_query("SELECT * FROM Url", dbmanager.database(self))
 
+
+    #The function converts the URL to streams of tokens; each token is a separated by word and punctuations
     def makeTokens(self, f):
         tkns_BySlash = str(f.encode('utf-8')).split('/')
         total_Tokens = []
@@ -29,6 +32,7 @@ class data_extraction(object):
             total_Tokens.remove('com')
         return total_Tokens
 
+    #The function will test the dataset then predicts the URL if it is SAFE or NOT.
     def prediction(self, urlInput):
         y = self.urlData["Condition"] 
         urlList = self.urlData["URLs"] 
@@ -38,8 +42,7 @@ class data_extraction(object):
         xLR, xTest, yLR, yTest = train_test_split(x, y, test_size=0.2, random_state=42)
         regression = LogisticRegression()
         regression.fit(xLR, yLR)
-        print("Accuracy ", regression.score(xTest, yTest) * 100)
-
+        print("Accuracy: ", regression.score(xTest, yTest) * 100)
         url = urlInput.strip().split()
         urlTok = vector.transform(url)
         value = regression.predict(urlTok) 
