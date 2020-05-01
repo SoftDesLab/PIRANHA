@@ -1,15 +1,13 @@
-#Libraries used for mainwindow.py
+#Libraries used for main.py
 from PyQt5 import QtCore, QtGui, QtWidgets, QtSql
-import background, piranhaLogo, piranhaAbout, team
+from User_Interface import background, piranhaLogo, piranhaAbout, team
 import sys
-sys.path.append('P.I.R.A.N.H.A/Logic')
-from data_extraction import data_extraction
+#Insert path of Application_Layer to run python scripts
+sys.path.insert(0, "C:/Users/jlkpl/OneDrive/Desktop/PIRANHA-master/Application_Layer/")
 from dbmanager import dbmanager
+from data_extraction import data_extraction
 
 class Ui_MainWindow(object):
-
-    def __init__(self):
-        pass
 
     #The function identifies if the entered website is a phishing website or not.
     def scanCheck(self):
@@ -36,7 +34,7 @@ class Ui_MainWindow(object):
     #The function displays the list of phishing websites in the database.
     def Refresh(self):
         query = "SELECT URLs FROM URL WHERE URL.Condition='0'"
-        use = dbmanager() 
+        use = dbmanager()
         results = use.database().execute(query)
         self.tableWidget.setRowCount(0)
         for row_num, row_data in enumerate(results): #For statement creates a table for the database.
@@ -312,8 +310,8 @@ class Ui_MainWindow(object):
     #The function that calls the tr() at the end of the MainWindow constructor and every time a user changes the application's language using the Language menu
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "P.I.R.A.H.N.A"))
-        MainWindow.setWindowIcon(QtGui.QIcon('assets/iconMain.png'))
+        MainWindow.setWindowTitle(_translate("MainWindow", "P.I.R.A.N.H.A"))
+        MainWindow.setWindowIcon(QtGui.QIcon('User_Interface/assets/iconMain.png'))
         self.scan.setText(_translate("MainWindow", "SCAN"))
         self.quote.setText(_translate("MainWindow", "<html><head/><body><p>RELENTLESS AND FIERCE AGAINST PHISHING.</p></body></html>"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.HomeTab), _translate("MainWindow", "HOME"))
