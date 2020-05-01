@@ -58,10 +58,6 @@ To download, open your browser, head over to https://code.visualstudio.com/, and
     ```
     $ pip install pandas 
     ```
-    **Modules used in the program:**
-    ```
-    from PyQt5 import QtCore, QtGui, QtWidgets
-    ```
     
 * **Numpy** <br />
   Numpy is the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and        tools for working with these arrays. <br />
@@ -96,7 +92,11 @@ To download, open your browser, head over to https://code.visualstudio.com/, and
     $ sudo apt-get install pyqt5-dev-tools
     $ sudo apt-get install qttools5-dev-tools
     ```
-
+    **Modules used in the program:**
+    ```
+    from PyQt5 import QtCore, QtGui, QtWidgets
+    ```
+    
 ##### Database Packages:
 * **DBManager** <br />
   DBManager is the most powerful application for data management. With builtin support for MySQL, PostgreSQL, Interbase/Firebird, SQLite, DBF tables, MSAccess, MSSQL Server, Sybase, Oracle and ODBC database engines, it also brings you new features which make it the most advanced application.
