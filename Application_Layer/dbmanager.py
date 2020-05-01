@@ -27,7 +27,7 @@ class dbmanager(object):
 
 	#The function presents the graph comparing the quantity of submitted websites in the database.
 	def graphdb(self):
-		connection = sqlite3.connect("urlData.db")
+		connection = sqlite3.connect("Database_Layer/urlData.db")
 		c = connection.cursor()
 		c.execute("SELECT URLs FROM URL WHERE URL.Condition='0'")
 		data = c.fetchall()
