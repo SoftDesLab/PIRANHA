@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="piranhaAbout">
+    <file>piranhaAbout.jpg</file>
+  </qresource>
+</RCC>
