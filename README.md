@@ -50,6 +50,14 @@ To download, open your browser, head over to https://code.visualstudio.com/, and
   ```
   $ python3 --version
   ```
+### Definitions, Acronyms, and Abbreviations
+* **Phishing** is a fraudulent attempt to acquire an individual’s sensitive data such as username, password, banking and credit card details.
+* **Phishing Websites** tricks people into believing that they are on a legitimate website to steal your personal identifiable information.
+* **Machine Learning** is an application of an artificial intelligence (AI) that helps programs to automatically learn from experience without being programmed by the user.
+* **Human vulnerability** in cybersecurity, is the vulnerable link of humans to the information security chain since they tend to make mistakes such as clicking malicious links in phishing websites.
+* **Software vulnerability** is a weakness in the software in an operating system (OS).
+* **Detection** the ability of identifying the presence of something that is obscure.
+* **Blacklist** is a list of things that are identified as deceitful and should be kept away from.
   
 ##### Python Packages:
 * **Pandas** <br />
@@ -82,7 +90,7 @@ To download, open your browser, head over to https://code.visualstudio.com/, and
     from sklearn.model_selection import train_test_split
     ```
     
-##### Graphical User Interface Packages:
+#### Graphical User Interface Packages:
 * **PyQt5** <br />
   PyQt5 is one of the most used modules in building GUI apps in Python and that's due to its simplicity as you will see. Another great feature that encourages developers to use PyQt5 is the PyQt5 designer which makes it so easy to develop complex GUI apps in a short time. <br />
   - To install PyQt5 on Ubuntu, type in the terminal:
@@ -97,7 +105,7 @@ To download, open your browser, head over to https://code.visualstudio.com/, and
     from PyQt5 import QtCore, QtGui, QtWidgets
     ```
     
-##### Database Packages:
+#### Database Packages:
 * **DBManager** <br />
   DBManager is the most powerful application for data management. With builtin support for MySQL, PostgreSQL, Interbase/Firebird, SQLite, DBF tables, MSAccess, MSSQL Server, Sybase, Oracle and ODBC database engines, it also brings you new features which make it the most advanced application.
   
@@ -158,26 +166,30 @@ The language that our program uses is SQL (Structured Query Language) is a datab
 
 ## User Cases
 1. Actors
-  a. Customer User
-    i.	The customer are the users who will benefit from the program. The actions that they can perform are to scan any website link,           store the phishing website link to the blacklist, view the bar graph of fraud and safe sites and show the information about the         program and its authors.
+     * **Customer User** <br />
+     
+         - The customer are the users who will benefit from the program. The actions that they can perform are to scan any website link,           store the phishing website link to the blacklist, view the bar graph of fraud and safe sites and show the information about             the program and its authors.
+     * **Software Developer** <br />
+     
+         - The software developers created the program using machine learning algorithm to determine whether the site is safe or not.              They are also the one who manages the database of the application and the listed phishing websites in the blacklist.
 2. List of Use Cases
-  a. Customer User Cases
-    i. Scan link
-      o	The user will enter a suspicious website, then the application will scan the website. The URL is converted into different data           through functions in the program and is tested in a categorical dependent variable that is in binary using linear regression to         determine if the site is safe or not.
-    ii. Display Blacklist
-      o	If the user has identified that the website is a phishing website, then the user can add it to the blacklist to feed the                 dataset. The list of these data is displayed in a table once the user clicks the refresh button because it is in a real-time              basis. The user can also view the graph which presents all the websites entered in the database.
-    iii.	Show Program and Developers Information
-      o	The user can view the insights of the team who created the program and its background.
-### General User
-* **Feature 1** <br />
-  - As a general user, I want to...
-* **Feature 2** <br />
-  - As a general user, I want  to...
+     * **Customer User Cases** <br />
+     
+       - Scan link
+         - The user will enter a suspicious website, then the application will scan the website. The URL is converted into different                data through functions in the program and is tested in a categorical dependent variable that is in binary using linear                  regression to determine if the site is safe or not.
+       - Display Blacklist
+         -	If the user has identified that the website is a phishing website, then the user can add it to the blacklist to feed the                 dataset. The list of these data is displayed in a table once the user clicks the refresh button because it is in a real-time             basis. The user can also view the graph which presents all the websites entered in the database.
+       - Show Program and Developers Information
+         - The user can view the insights of the team who created the program and its background.
+     * **Software Developer Case** <br />
+     
+       - Manage Stored Data
+         - The developers manages the database of the application. They can create, read, update and delete the database of the website             list.
   
 ## System Architecture
-* **UML Case Diagram**
+* **Case Diagram**
 ![UML Case Diagram-1](https://user-images.githubusercontent.com/40769687/80790810-5e494d80-8bc2-11ea-8e95-67beebe3434e.png)
-* **UML**
+* **Classes Diagram**
 
 ![UML PIRANHA](https://user-images.githubusercontent.com/40769687/80791010-f1828300-8bc2-11ea-82b4-f4bbc75fa7ef.png)
 
