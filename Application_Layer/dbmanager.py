@@ -8,12 +8,12 @@ class dbmanager(object):
 
 	#The function gives access to the database from the mainwindow.py
 	def database(self):
-		connection = sqlite3.connect("urlData.db")
+		connection = sqlite3.connect("Database_Layer/urlData.db")
 		return connection
 
 	#The function lets the user enter a phishing website to the database.
 	def inputdb(self, insert):
-		connection = sqlite3.connect("urlData.db")
+		connection = sqlite3.connect("Database_Layer/urlData.db")
 		data = insert
 		bad = 0
 		if data != "":
