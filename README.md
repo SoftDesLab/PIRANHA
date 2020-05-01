@@ -1,5 +1,5 @@
 # Phishing Identifier and Remote Access Network or Hacking APIs
-![GitHub Logo](https://github.com/SoftDesLab/P.I.R.A.N.H.A./blob/AldeRBA/logo.jpg) <br />
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/JulkipliOMY/User_Interface/Pics_readme/logo.jpg) <br />
 A program that detects phishing websites with machine learning by Python.
 
 ## Table of Contents
@@ -42,43 +42,68 @@ To download, open your browser, head over to https://code.visualstudio.com/, and
   Python is a high-level, general-purpose programming language with a reference implementation that compiles source code into bytecode before being executed on a process virtual machine.
   If you don't have Python already installed, run the following commands to install Python3 and pip3, the package manager for Python, into your Linux installation.
 ```
-sudo apt update
-sudo apt install python3 python3-pip3
+$ sudo apt update
+$ sudo apt install python3 python3-pip3
 ```
 And to verify, run:
 ```
-python3 --version
+$ python3 --version
 ```
 ##### Python Packages:
 * **Pandas** <br />
-  Pandas is a high-level data manipulation tool developed by Wes McKinney. It is built on the Numpy package and its key data structure     is called the DataFrame. DataFrames allow you to store and manipulate tabular data in rows of observations and columns of variables.
-    - To install pandas using pip, type in the terminal:
+  Pandas is a high-level data manipulation tool developed by Wes McKinney. It is built on the Numpy package and its key data structure    is called the DataFrame. DataFrames allow you to store and manipulate tabular data in rows of observations and columns of variables. <br />
+  - To install pandas using pip, type in the terminal:
     ```
-    pip install pandas 
+    $ pip install pandas 
+    ```
+    **Modules used in the program:**
+    ```
+    from PyQt5 import QtCore, QtGui, QtWidgets
     ```
 * **Numpy** <br />
-  Numpy is the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and         tools for working with these arrays.
-    - To install numpy using pip, type in the terminal: 
+  Numpy is the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and        tools for working with these arrays. <br />
+  - To install numpy using pip, type in the terminal: 
     ```
-    pip install numpy
+    $ pip install numpy
     ```
 * **Random** <br />
   Random is a built-in module that you can use to make random numbers. Some of its features are securing random generator using a secrets module which generates secure tokens, security keys, and URL, set the state of a random generator, generate random strings and passwords, and etc.
 * **SKLearn** <br />
-  Scikit-learn is a free built-in machine learning library for Python. It features various algorithms like support vector machine, random forests, and k-neighbours, and it also supports Python numerical and scientific libraries like NumPy and SciPy.
- 
+  Scikit-learn is a free built-in machine learning library for Python. It features various algorithms like support vector machine, random forests, and k-neighbours, and it also supports Python numerical and scientific libraries like NumPy and SciPy. <br />
+  - To install SciKit-Learn, type in the terminal:
+    ```
+    $ pip3 install -U scikit-learn
+    ```
+    **Modules used in the program:**
+    ```
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.model_selection import train_test_split
+    ```
+    
 ##### Graphical User Interface Packages:
 * **PyQt5** <br />
-  PyQt5 is one of the most used modules in building GUI apps in Python and that's due to its simplicity as you will see. Another great feature that encourages developers to use PyQt5 is the PyQt5 designer which makes it so easy to develop complex GUI apps in a short time.
+  PyQt5 is one of the most used modules in building GUI apps in Python and that's due to its simplicity as you will see. Another great feature that encourages developers to use PyQt5 is the PyQt5 designer which makes it so easy to develop complex GUI apps in a short time. <br />
+  - To install PyQt5 on Ubuntu, type in the terminal:
+    ```
+    $ pip3 install --user pyqt5  
+    $ sudo apt-get install python3-pyqt5  
+    $ sudo apt-get install pyqt5-dev-tools
+    $ sudo apt-get install qttools5-dev-tools
+    ```
 
 ##### Database Packages:
 * **DBManager** <br />
   DBManager is the most powerful application for data management. With builtin support for MySQL, PostgreSQL, Interbase/Firebird, SQLite, DBF tables, MSAccess, MSSQL Server, Sybase, Oracle and ODBC database engines, it also brings you new features which make it the most advanced application.
 * **SQLite 3** <br />
-  SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.
-
+  SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle. <br />
+  - To install SQLite 3 on Ubuntu, type in the terminal: 
+    ```
+    $ sudo apt-get install sqlite3
+    ```
+    
 ## User Manual
-<img src="https://github.com/SoftDesLab/P.I.R.A.N.H.A./blob/JulkipliOMY/How.gif">
+<img src="https://github.com/SoftDesLab/PIRANHA/blob/JulkipliOMY/User_Interface/Pics_readme/How.gif">
 
 The user manual present the step-b-step procedure on how to use the P.I.R.A.N.H.A program focusing on website detection using Scikit-learn machine learning library.
 
@@ -86,12 +111,13 @@ The user manual present the step-b-step procedure on how to use the P.I.R.A.N.H.
   1. Install all the required packages as seen under the Requirements section.
   2. Clone the P.I.R.A.N.H.A repository to sync to your local machine.
      ```
-     git clone https://github.com/SoftDesLab/P.I.R.A.N.H.A..git
+     $ git clone https://github.com/SoftDesLab/P.I.R.A.N.H.A..git
      ```
   3. After cloning the repository, unzip the file folder to use.
-  4. Add the folder to your IDE (Visual Studio Code, NetBeans, Sublime Text...) 
-  5. Go to the main.py to debug and run the program.
-  6. A GUI platform will be displayed; the program has three pages that represents each functionality:
+  4. Add the folder to your IDE (Visual Studio Code, NetBeans, Sublime Text...).
+  5. Go to the main.py and insert the path of the Application_Layer to run the python scripts.
+  6. Debug and run the program.
+  7. A GUI platform will be displayed; the program has three pages that represents each functionality:
   
  * **Home** <br />
    The home page serves as the starting point of the program. It presents the main capability of the program which is to scan the
@@ -107,11 +133,10 @@ The user manual present the step-b-step procedure on how to use the P.I.R.A.N.H.
    the number of websites in a dataset to interpret where the machine learning program is basing on.
   
 * **About Us** <br/>
-   The About us page is where the insights of the developers involved in the Team page while an overview of the program in the Project 
-   Page.
+   The About us page is where the insights of the developers involved in the Team page while an overview of the program in the Project Page.
    
 ## Target Audience
-For this repository our target audience are Data Analysts, students and teachers of Computer Engineering, Computer Science, and Information Technology. As our content in this repository, the Detection of Phishing Websites and the list of Black listed websites.
+For this repository, our target audience are Data Analysts, students and teachers of Computer Engineering, Computer Science, and Information Technology. As our content in this repository, the Detection of Phishing Websites and the list of Black listed websites.
 
 ## Focus Areas
 This repository aims to give understanding on how Detecting Phishing Websites works.
@@ -130,6 +155,12 @@ The language that our program uses is SQL (Structured Query Language) is a datab
   - As a general user, I want  to...
   
 ## System Architecture
+* **UML Case Diagram**
+![UML Case Diagram-1](https://user-images.githubusercontent.com/40769687/80790810-5e494d80-8bc2-11ea-8e95-67beebe3434e.png)
+* **UML**
+
+![UML PIRANHA](https://user-images.githubusercontent.com/40769687/80791010-f1828300-8bc2-11ea-82b4-f4bbc75fa7ef.png)
+
 ## Sample Screenshots
 ## Authors
 * **Leaders:** <br />
