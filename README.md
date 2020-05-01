@@ -156,7 +156,18 @@ We aim to have scenarios that helps the users to be aware of Phishing Websites. 
 ### Languages
 The language that our program uses is SQL (Structured Query Language) is a database management language for relational databases. The programming language that the program uses is the Python programming language which is an interpreted, object-oriented, high-level programming language with dynamic semantics.
 
-## User Stories
+## User Cases
+1. Actors
+  a. Customer User
+    i.	The customer are the users who will benefit from the program. The actions that they can perform are to scan any website link,           store the phishing website link to the blacklist, view the bar graph of fraud and safe sites and show the information about the         program and its authors.
+2. List of Use Cases
+  a. Customer User Cases
+    i. Scan link
+      o	The user will enter a suspicious website, then the application will scan the website. The URL is converted into different data           through functions in the program and is tested in a categorical dependent variable that is in binary using linear regression to         determine if the site is safe or not.
+    ii. Display Blacklist
+      o	If the user has identified that the website is a phishing website, then the user can add it to the blacklist to feed the                 dataset. The list of these data is displayed in a table once the user clicks the refresh button because it is in a real-time              basis. The user can also view the graph which presents all the websites entered in the database.
+    iii.	Show Program and Developers Information
+      o	The user can view the insights of the team who created the program and its background.
 ### General User
 * **Feature 1** <br />
   - As a general user, I want to...
