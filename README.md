@@ -1,5 +1,5 @@
 # Phishing Identifier and Remote Access Network or Hacking APIs
-![GitHub Logo](https://github.com/SoftDesLab/P.I.R.A.N.H.A./blob/AldeRBA/logo.jpg) <br />
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/JulkipliOMY/User_Interface/Pics_readme/logo.jpg) <br />
 A program that detects phishing websites with machine learning by Python.
 
 ## Table of Contents
@@ -78,7 +78,7 @@ python3 --version
   SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.
 
 ## User Manual
-<img src="https://github.com/SoftDesLab/P.I.R.A.N.H.A./blob/JulkipliOMY/How.gif">
+<img src="https://github.com/SoftDesLab/PIRANHA/blob/JulkipliOMY/User_Interface/Pics_readme/How.gif">
 
 The user manual present the step-b-step procedure on how to use the P.I.R.A.N.H.A program focusing on website detection using Scikit-learn machine learning library.
 
@@ -89,9 +89,10 @@ The user manual present the step-b-step procedure on how to use the P.I.R.A.N.H.
      git clone https://github.com/SoftDesLab/P.I.R.A.N.H.A..git
      ```
   3. After cloning the repository, unzip the file folder to use.
-  4. Add the folder to your IDE (Visual Studio Code, NetBeans, Sublime Text...) 
-  5. Go to the main.py to debug and run the program.
-  6. A GUI platform will be displayed; the program has three pages that represents each functionality:
+  4. Add the folder to your IDE (Visual Studio Code, NetBeans, Sublime Text...).
+  5. Go to the main.py and insert the path of the Application_Layer to run the python scripts.
+  6. Debug and run the program.
+  7. A GUI platform will be displayed; the program has three pages that represents each functionality:
   
  * **Home** <br />
    The home page serves as the starting point of the program. It presents the main capability of the program which is to scan the
