@@ -100,6 +100,8 @@ The language that our program uses is SQL (Structured Query Language) is a datab
   - As a general user, I want  to...
   
 ## System Architecture
+* **UML Case Diagram**
+
 ## Sample Screenshots
 ## Authors
 * **Leaders:** <br />
