@@ -42,41 +42,55 @@ To download, open your browser, head over to https://code.visualstudio.com/, and
   Python is a high-level, general-purpose programming language with a reference implementation that compiles source code into bytecode before being executed on a process virtual machine.
   If you don't have Python already installed, run the following commands to install Python3 and pip3, the package manager for Python, into your Linux installation.
 ```
-sudo apt update
-sudo apt install python3 python3-pip3
+$ sudo apt update
+$ sudo apt install python3 python3-pip3
 ```
 And to verify, run:
 ```
-python3 --version
+$ python3 --version
 ```
 ##### Python Packages:
 * **Pandas** <br />
   Pandas is a high-level data manipulation tool developed by Wes McKinney. It is built on the Numpy package and its key data structure     is called the DataFrame. DataFrames allow you to store and manipulate tabular data in rows of observations and columns of variables.
     - To install pandas using pip, type in the terminal:
     ```
-    pip install pandas 
+    $ pip install pandas 
     ```
 * **Numpy** <br />
   Numpy is the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and         tools for working with these arrays.
     - To install numpy using pip, type in the terminal: 
     ```
-    pip install numpy
+    $ pip install numpy
     ```
 * **Random** <br />
   Random is a built-in module that you can use to make random numbers. Some of its features are securing random generator using a secrets module which generates secure tokens, security keys, and URL, set the state of a random generator, generate random strings and passwords, and etc.
 * **SKLearn** <br />
   Scikit-learn is a free built-in machine learning library for Python. It features various algorithms like support vector machine, random forests, and k-neighbours, and it also supports Python numerical and scientific libraries like NumPy and SciPy.
- 
+  To install SciKit-Learn, type in the terminal:
+    ```
+    $ pip3 install -U scikit-learn
+    ```
+    
 ##### Graphical User Interface Packages:
 * **PyQt5** <br />
   PyQt5 is one of the most used modules in building GUI apps in Python and that's due to its simplicity as you will see. Another great feature that encourages developers to use PyQt5 is the PyQt5 designer which makes it so easy to develop complex GUI apps in a short time.
+  To install PyQt5 on Ubuntu, type in the terminal:
+    ```
+    $ pip3 install --user pyqt5  
+    $ sudo apt-get install python3-pyqt5  
+    $ sudo apt-get install pyqt5-dev-tools
+    $ sudo apt-get install qttools5-dev-tools
+    ```
 
 ##### Database Packages:
 * **DBManager** <br />
   DBManager is the most powerful application for data management. With builtin support for MySQL, PostgreSQL, Interbase/Firebird, SQLite, DBF tables, MSAccess, MSSQL Server, Sybase, Oracle and ODBC database engines, it also brings you new features which make it the most advanced application.
 * **SQLite 3** <br />
   SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.
-
+    ```
+    $ sudo apt-get install sqlite3
+    ```
+    
 ## User Manual
 <img src="https://github.com/SoftDesLab/PIRANHA/blob/JulkipliOMY/User_Interface/Pics_readme/How.gif">
 
@@ -86,7 +100,7 @@ The user manual present the step-b-step procedure on how to use the P.I.R.A.N.H.
   1. Install all the required packages as seen under the Requirements section.
   2. Clone the P.I.R.A.N.H.A repository to sync to your local machine.
      ```
-     git clone https://github.com/SoftDesLab/P.I.R.A.N.H.A..git
+     $ git clone https://github.com/SoftDesLab/P.I.R.A.N.H.A..git
      ```
   3. After cloning the repository, unzip the file folder to use.
   4. Add the folder to your IDE (Visual Studio Code, NetBeans, Sublime Text...).
