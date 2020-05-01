@@ -51,20 +51,18 @@ $ python3 --version
 ```
 ##### Python Packages:
 * **Pandas** <br />
-  Pandas is a high-level data manipulation tool developed by Wes McKinney. It is built on the Numpy package and its key data structure     is called the DataFrame. DataFrames allow you to store and manipulate tabular data in rows of observations and columns of variables. <br />
-    - To install pandas using pip, type in the terminal:
+  Pandas is a high-level data manipulation tool developed by Wes McKinney. It is built on the Numpy package and its key data structure    is called the DataFrame. DataFrames allow you to store and manipulate tabular data in rows of observations and columns of variables. <br />
+  - To install pandas using pip, type in the terminal:
     ```
     $ pip install pandas 
     ```
     **Modules used in the program:**
     ```
-    QtCore
-    QtGui
-    QtWidgets
+    from PyQt5 import QtCore, QtGui, QtWidgets
     ```
 * **Numpy** <br />
-  Numpy is the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and         tools for working with these arrays. <br />
-    - To install numpy using pip, type in the terminal: 
+  Numpy is the core library for scientific computing in Python. It provides a high-performance multidimensional array object, and        tools for working with these arrays. <br />
+  - To install numpy using pip, type in the terminal: 
     ```
     $ pip install numpy
     ```
