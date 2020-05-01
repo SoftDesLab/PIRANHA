@@ -89,9 +89,10 @@ The user manual present the step-b-step procedure on how to use the P.I.R.A.N.H.
      git clone https://github.com/SoftDesLab/P.I.R.A.N.H.A..git
      ```
   3. After cloning the repository, unzip the file folder to use.
-  4. Add the folder to your IDE (Visual Studio Code, NetBeans, Sublime Text...) 
-  5. Go to the main.py to debug and run the program.
-  6. A GUI platform will be displayed; the program has three pages that represents each functionality:
+  4. Add the folder to your IDE (Visual Studio Code, NetBeans, Sublime Text...).
+  5. Go to the main.py and insert the path of the Application_Layer to run the python scripts.
+  6. Debug and run the program.
+  7. A GUI platform will be displayed; the program has three pages that represents each functionality:
   
  * **Home** <br />
    The home page serves as the starting point of the program. It presents the main capability of the program which is to scan the
