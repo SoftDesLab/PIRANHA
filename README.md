@@ -139,7 +139,7 @@ The user manual present the step-b-step procedure on how to use the P.I.R.A.N.H.
  * **Home** <br />
    The home page serves as the starting point of the program. It presents the main capability of the program which is to scan the
    suspicious website entered by the suer. Once, the website has been scanned by the feature_extraction.py. The Tfidvectorizer's
-   purpose is to convert a collection of data to a matrix of TF-IFF or features in the prediction function then after that the
+   purpose is to convert a collection of data to a matrix of TF-IDF or features in the prediction function then after that the
    program convers the url into streams of tokens which are then separated by word and punctuation then return the prediction to
    test the dataset and predict the probability of the URL in a categorical dependent varible which is in binary through Logistic 
    Regression if it is safe or not. Then, the status of the suspicious website will be displayed.
@@ -191,9 +191,30 @@ The language that our program uses is SQL (Structured Query Language) is a datab
 ![UML Case Diagram-1](https://user-images.githubusercontent.com/40769687/80790810-5e494d80-8bc2-11ea-8e95-67beebe3434e.png)
 * **Classes Diagram**
 
-![UML PIRANHA](https://user-images.githubusercontent.com/40769687/80791010-f1828300-8bc2-11ea-82b4-f4bbc75fa7ef.png)
+![UML PIRANHA](https://user-images.githubusercontent.com/40769687/80860854-10554800-8c9d-11ea-9f81-cdd4a245113f.png)
 
 ## Sample Screenshots
+### 1. Enter a Suspicious website
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot8.jpg) <br />
+
+### 2. The URL is identified as a Phishing website
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot9.jpg) <br />
+
+### 3. Blacklist
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot10.jpg) <br />
+
+### 4. Add the Phishing website to the blacklist
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot14.jpg) <br />
+
+### 5. Displaying the bar graph
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot12.jpg) <br />
+
+### 6. Developers' information
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot3.jpg) <br />
+
+### 7. Program information
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot4.jpg) <br />
+
 ## Authors
 * **Leaders:** <br />
   * *Garcia, Joshua Ron G.* (https://github.com/peculiarNoobie)
