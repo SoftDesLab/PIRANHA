@@ -191,7 +191,7 @@ The language that our program uses is SQL (Structured Query Language) is a datab
 ![UML Case Diagram-1](https://user-images.githubusercontent.com/40769687/80790810-5e494d80-8bc2-11ea-8e95-67beebe3434e.png)
 * **Classes Diagram**
 
-![UML PIRANHA](https://user-images.githubusercontent.com/40769687/80791010-f1828300-8bc2-11ea-82b4-f4bbc75fa7ef.png)
+![UML PIRANHA](https://user-images.githubusercontent.com/40769687/80860854-10554800-8c9d-11ea-9f81-cdd4a245113f.png)
 
 ## Sample Screenshots
 ## Authors
