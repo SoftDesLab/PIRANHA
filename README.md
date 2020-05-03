@@ -189,7 +189,7 @@ The languages that our program uses is SQL (Structured Query Language) is a data
 ![UML Case Diagram-1](https://user-images.githubusercontent.com/40769687/80790810-5e494d80-8bc2-11ea-8e95-67beebe3434e.png)
 * **Classes Diagram**
 
-![UML PIRANHA](https://user-images.githubusercontent.com/40769687/80860854-10554800-8c9d-11ea-9f81-cdd4a245113f.png)
+![UML](https://user-images.githubusercontent.com/40769687/80908361-d8f4a300-8d51-11ea-89fe-1df878ae904e.png)
 
 ## Sample Screenshots
 ### 1. Enter a Suspicious website
