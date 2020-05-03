@@ -74,9 +74,6 @@ To download, open your browser, head over to https://code.visualstudio.com/, and
     $ pip install numpy
     ```
     
-* **Random** <br />
-  Random is a built-in module that you can use to make random numbers. Some of its features are securing random generator using a secrets module which generates secure tokens, security keys, and URL, set the state of a random generator, generate random strings and passwords, and etc.
-  
 * **SKLearn** <br />
   Scikit-learn is a free built-in machine learning library for Python. It features various algorithms like support vector machine, random forests, and k-neighbours, and it also supports Python numerical and scientific libraries like NumPy and SciPy. <br />
   - To install SciKit-Learn, type in the terminal:
@@ -119,7 +116,7 @@ To download, open your browser, head over to https://code.visualstudio.com/, and
 ## User Manual
 <img src="https://github.com/SoftDesLab/PIRANHA/blob/JulkipliOMY/User_Interface/Pics_readme/How.gif">
 
-The user manual present the step-b-step procedure on how to use the P.I.R.A.N.H.A program focusing on website detection using Scikit-learn machine learning library.
+The User manual present the step-by-step procedure on how to use the P.I.R.A.N.H.A program focusing on website detection using Scikit-learn machine learning library.
 
 **Instructions:**
   1. Install all the required packages as seen under the Requirements section.
@@ -137,23 +134,24 @@ The user manual present the step-b-step procedure on how to use the P.I.R.A.N.H.
   7. A GUI platform will be displayed; the program has three pages that represents each functionality:
   
  * **Home** <br />
-   The home page serves as the starting point of the program. It presents the main capability of the program which is to scan the
+   The Home page serves as the starting point of the program. It presents the main capability of the program which is to scan the
    suspicious website entered by the suer. Once, the website has been scanned by the feature_extraction.py. The Tfidvectorizer's
    purpose is to convert a collection of data to a matrix of TF-IDF or features in the prediction function then after that the
-   program convers the url into streams of tokens which are then separated by word and punctuation then return the prediction to
+   program converts the url into streams of data which are then separated by word and punctuation then return the prediction to
    test the dataset and predict the probability of the URL in a categorical dependent varible which is in binary through Logistic 
    Regression if it is safe or not. Then, the status of the suspicious website will be displayed.
     
  * **Blacklist** <br />
-   The blacklist page serves as to where the proven phishing websites are added to the dataset. the list of captured phishing websites
+   The Blacklist page serves as to where the proven phishing websites are added to the dataset. the list of captured phishing websites
    are presented in a table once the user refresh since it is in a real-time basis. In addition, a bar graph is presented to showcase
    the number of websites in a dataset to interpret where the machine learning program is basing on.
   
 * **About Us** <br/>
-   The About us page is where the insights of the developers involved in the Team page while an overview of the program in the Project Page.
+   The About us page is where the insights of the developers involved in the Team page while an overview of the program in the Project
+   page.
    
 ## Target Audience
-For this repository, our target audience are Data Analysts, students and teachers of Computer Engineering, Computer Science, and Information Technology. As our content in this repository, the Detection of Phishing Websites and the list of Black listed websites.
+For this repository, our target audience are Data Analysts, Cybersecurity, students and teachers of Computer Engineering, Computer Science, and Information Technology. As our content in this repository, the Detection of Phishing Websites and the list of Blacklisted websites.
 
 ## Focus Areas
 This repository aims to give understanding on how Detecting Phishing Websites works.
@@ -162,7 +160,7 @@ This repository aims to give understanding on how Detecting Phishing Websites wo
 We aim to have scenarios that helps the users to be aware of Phishing Websites. This program helps user to distinguish whether the Website is a Phishinhg Website or a real website.
 
 ### Languages
-The language that our program uses is SQL (Structured Query Language) is a database management language for relational databases. The programming language that the program uses is the Python programming language which is an interpreted, object-oriented, high-level programming language with dynamic semantics.
+The languages that our program uses is SQL (Structured Query Language) is a database management language for relational databases. The programming language that the program uses is the Python programming language which is an interpreted, object-oriented, high-level programming language with dynamic semantics.
 
 ## User Cases
 1. Actors
