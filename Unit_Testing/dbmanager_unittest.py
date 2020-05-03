@@ -14,7 +14,7 @@ class DbManagerTestCase(unittest.TestCase):
         
     def test_connection(self):
         clas = Dbmanager()
-        clas.inputdb('www.gogle.com')
+        clas.inputdb('www.google.com')
         self.assertTrue('connection = sqlite3.connect("urlData.db")')
     
     def test_connection(self):
