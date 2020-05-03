@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-class dbmanager(object):
+class Dbmanager(object):
 
 	#The function gives access to the database from the mainwindow.py
 	def database(self):
