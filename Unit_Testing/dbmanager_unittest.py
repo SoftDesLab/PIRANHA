@@ -6,17 +6,17 @@ from dbmanager import Dbmanager
 class DbManagerTestCase(unittest.TestCase):
     
     def test_database(self):
-        clas = dbmanager()
+        clas = Dbmanager()
         clas.database()
         self.assertTrue('connection = sqlite3.connect("urlData.db")')
         
     def test_connection(self):
-        clas = dbmanager()
+        clas = Dbmanager()
         clas.inputdb('www.gogle.com')
         self.assertTrue('connection = sqlite3.connect("urlData.db")')
     
     def test_connection(self):
-        clas = dbmanager()
+        clas = Dbmanager()
         clas.graphdb()
         self.assertTrue('connection = sqlite3.connect("urlData.db")')
         
