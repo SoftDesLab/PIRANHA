@@ -1,11 +1,11 @@
 #Libraries used for main.py
-from PyQt5 import QtCore, QtGui, QtWidgets, QtSql
+from PyQt5 import QtCore, QtGui, QtWidgets
 from User_Interface import background, piranhaLogo, piranhaAbout, team
 import sys
 #Insert path of Application_Layer to run python scripts
-sys.path.insert(0, "C:/Users/jlkpl/OneDrive/Desktop/PIRANHA-master/Application_Layer/")
-from dbmanager import dbmanager
-from data_extraction import data_extraction
+sys.path.insert(0,"C:/Users/jlkpl/OneDrive/Desktop/PIRANHA-master/PIRANHA-master/Application_Layer")
+from dbmanager import Dbmanager
+from data_extraction import Data_extraction
 
 class Ui_MainWindow(object):
 
@@ -18,23 +18,19 @@ class Ui_MainWindow(object):
             self.progressBar.setValue(self.completed)
         urlInput = self.lineEdit.text()
         if urlInput != "":
-            use = data_extraction()
+            use = Data_extraction()
             status = use.prediction(urlInput)
             if status != [1]: #If statement identifies if the prediction is either from [1] - SAFE or [0] - NOT. 
                 self.label.setText(_translate("MainWindow", "STATUS: THE SUSPICIOUS WEBSITE IS A PHISHING BAIT."))
             else:
                 self.label.setText(_translate("Mainwindow", "STATUS: THE SUSPICIOUS WEBSITE IS NOT A PHISHING BAIT."))
         else:
-
-            self.label.setText(_translate("Mainwindow", "STATUS: ENTER SOMETHING YOU DOUCHE."))
-
-            self.label.setText(_translate("Mainwindow", "STATUS: The Website is not a Phishing URL."))
-            print("STATUS: The Website is not a Phishing URL.")  
+            self.label.setText(_translate("Mainwindow", "STATUS: ENTER THE SUSPICIOUS WEBSITE TO SCAN."))
 
     #The function displays the list of phishing websites in the database.
     def Refresh(self):
         query = "SELECT URLs FROM URL WHERE URL.Condition='0'"
-        use = dbmanager()
+        use = Dbmanager()
         results = use.database().execute(query)
         self.tableWidget.setRowCount(0)
         for row_num, row_data in enumerate(results): #For statement creates a table for the database.
@@ -47,12 +43,12 @@ class Ui_MainWindow(object):
     #The function inserts new suspicious websites to the database hence, it would increase the approximation of the program.
     def insertBL(self, insert): #Having difficulties in calling the function inputdb from db manager
         insert = self.inputBL.text()
-        use = dbmanager()
+        use = Dbmanager()
         use.inputdb(insert) #Inserts the suspicious website to the database.
 
     #The function shows the Phishing Website analysis bargraph comparing the quantity between what is safe and not.
     def graphicBL(self):
-        use = dbmanager()
+        use = Dbmanager()
         use.graphdb()
 
     #The function creates the interface.

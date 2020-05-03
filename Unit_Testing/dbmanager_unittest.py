@@ -1,7 +1,7 @@
 import unittest
 import sqlite3
 
-from dbmanager import dbmanager
+from dbmanager import Dbmanager
 
 class DbManagerTestCase(unittest.TestCase):
     
