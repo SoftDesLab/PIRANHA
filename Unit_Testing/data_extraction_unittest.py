@@ -19,5 +19,10 @@ class DataExtractionTestCase(unittest.TestCase):
         clas.__init__()
         self.assertTrue('self.urlData = pd.read_sql_query("SELECT * FROM Url", Dbmanager.database(self))')
     
+    def test_prediction(self):
+        clas = Data_extraction()
+        clas.prediction
+        self.assertTrue('urlList = self.urlData["URLs"]')
+        
 if __name__ == '__main__':
      unittest.main()
