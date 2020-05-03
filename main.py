@@ -1,5 +1,5 @@
 #Libraries used for main.py
-from PyQt5 import QtCore, QtGui, QtWidgets, QtSql
+from PyQt5 import QtCore, QtGui, QtWidgets
 from User_Interface import background, piranhaLogo, piranhaAbout, team
 import sys
 #Insert path of Application_Layer to run python scripts
