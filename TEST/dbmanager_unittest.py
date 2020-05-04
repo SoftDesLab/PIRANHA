@@ -2,7 +2,7 @@ import unittest
 import sqlite3
 import sys
 #Insert path of Application_Layer to run python scripts
-sys.path.insert(0, "/home/dominic/PIRANHA/Application_Layer")
+sys.path.insert(0, "C:/Users/jlkpl/OneDrive/Desktop/PIRANHA-master/PIRANHA-master/BLL")
 from dbmanager import Dbmanager
 
 class DbManagerTestCase(unittest.TestCase):
