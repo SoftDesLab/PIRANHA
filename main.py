@@ -1,9 +1,9 @@
 #Libraries used for main.py
 from PyQt5 import QtCore, QtGui, QtWidgets
-from User_Interface import background, piranhaLogo, piranhaAbout, team
+from UI import background, piranhaLogo, piranhaAbout, team
 import sys
 #Insert path of Application_Layer to run python scripts
-sys.path.insert(0,"C:/Users/jlkpl/OneDrive/Desktop/PIRANHA-master/PIRANHA-master/Application_Layer")
+sys.path.insert(0,"C:/Users/jlkpl/OneDrive/Desktop/PIRANHA-master/PIRANHA-master/BLL")
 from dbmanager import Dbmanager
 from data_extraction import Data_extraction
 
