@@ -1,9 +1,9 @@
 #Libraries used for main.py
 from PyQt5 import QtCore, QtGui, QtWidgets
-from User_Interface import background, piranhaLogo, piranhaAbout, team
+from UI import background, piranhaLogo, piranhaAbout, team
 import sys
 #Insert path of Application_Layer to run python scripts
-sys.path.insert(0,"C:/Users/jlkpl/OneDrive/Desktop/PIRANHA-master/PIRANHA-master/Application_Layer")
+sys.path.insert(0,"C:/Users/jlkpl/OneDrive/Desktop/PIRANHA-master/PIRANHA-master/BLL")
 from dbmanager import Dbmanager
 from data_extraction import Data_extraction
 
@@ -307,7 +307,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "P.I.R.A.N.H.A"))
-        MainWindow.setWindowIcon(QtGui.QIcon('User_Interface/assets/iconMain.png'))
+        MainWindow.setWindowIcon(QtGui.QIcon('UI/assets/iconMain.png'))
         self.scan.setText(_translate("MainWindow", "SCAN"))
         self.quote.setText(_translate("MainWindow", "<html><head/><body><p>RELENTLESS AND FIERCE AGAINST PHISHING.</p></body></html>"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.HomeTab), _translate("MainWindow", "HOME"))

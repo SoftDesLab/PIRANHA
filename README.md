@@ -1,5 +1,5 @@
 # Phishing Identifier and Remote Access Network or Hacking APIs
-![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/JulkipliOMY/User_Interface/Pics_readme/logo.jpg) <br />
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/JulkipliOMY/UI/Pics_readme/logo.jpg) <br />
 A program that detects phishing websites with machine learning by Python.
 
 ## Table of Contents
@@ -114,7 +114,7 @@ To download, open your browser, head over to https://code.visualstudio.com/, and
     ```
     
 ## User Manual
-<img src="https://github.com/SoftDesLab/PIRANHA/blob/JulkipliOMY/User_Interface/Pics_readme/How.gif">
+<img src="https://github.com/SoftDesLab/PIRANHA/blob/JulkipliOMY/UI/Pics_readme/How.gif">
 
 The User manual present the step-by-step procedure on how to use the P.I.R.A.N.H.A program focusing on website detection using Scikit-learn machine learning library.
 
@@ -189,29 +189,29 @@ The languages that our program uses is SQL (Structured Query Language) is a data
 ![UML Case Diagram-1](https://user-images.githubusercontent.com/40769687/80790810-5e494d80-8bc2-11ea-8e95-67beebe3434e.png)
 * **Classes Diagram**
 
-![UML PIRANHA](https://user-images.githubusercontent.com/40769687/80860854-10554800-8c9d-11ea-9f81-cdd4a245113f.png)
+![UML](https://user-images.githubusercontent.com/40769687/80908361-d8f4a300-8d51-11ea-89fe-1df878ae904e.png)
 
 ## Sample Screenshots
 ### 1. Enter a Suspicious website
-![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot8.jpg) <br />
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/UI/Pics_readme/screenshot8.jpg) <br />
 
 ### 2. The URL is identified as a Phishing website
-![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot9.jpg) <br />
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/UI/Pics_readme/screenshot9.jpg) <br />
 
 ### 3. Blacklist
-![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot10.jpg) <br />
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/UI/Pics_readme/screenshot10.jpg) <br />
 
 ### 4. Add the Phishing website to the blacklist
-![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot14.jpg) <br />
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/UI/Pics_readme/screenshot14.jpg) <br />
 
 ### 5. Displaying the bar graph
-![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot12.jpg) <br />
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/UI/Pics_readme/screenshot12.jpg) <br />
 
 ### 6. Developers' information
-![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot3.jpg) <br />
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/UI/Pics_readme/screenshot3.jpg) <br />
 
 ### 7. Program information
-![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/User_Interface/Pics_readme/screenshot4.jpg) <br />
+![GitHub Logo](https://github.com/SoftDesLab/PIRANHA/blob/master/UI/Pics_readme/screenshot4.jpg) <br />
 
 ## Authors
 * **Leaders:** <br />
